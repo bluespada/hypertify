@@ -10,10 +10,12 @@ function createWindow() {
         hasShadow: true,
         autoHideMenuBar: true,
         webPreferences: {
-            preload: join(__dirname, '../preload/index.ts'),
+            preload: join(__dirname, '../preload/index.js'),
             sandbox: false,
         }
     });
+
+    window.setTitle("hypertify");
 
     window.setContentProtection(true);
 

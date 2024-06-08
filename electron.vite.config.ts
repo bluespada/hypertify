@@ -39,7 +39,7 @@ export default defineConfig({
         },
         resolve: {
             alias: {
-                '@renderer': path.resolve(__dirname, "src/"),
+                '@': path.resolve(__dirname, "src/"),
             },
         },
         plugins: [ externalizeDepsPlugin(), react(), VitePWA({ registerType: "autoUpdate" }) ]

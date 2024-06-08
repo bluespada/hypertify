@@ -1,4 +1,8 @@
-console.log("hello world");
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import App from '@/App';
 
-const root = document.getElementById("zeus")!;
-root.innerText = "<h1>Hello World</h1>";
+import '@/assets/main.scss';
+
+const root = createRoot(document.getElementById("zeus") as HTMLElement);
+root.render(<App/>);
